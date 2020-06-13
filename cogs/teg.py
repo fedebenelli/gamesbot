@@ -24,7 +24,7 @@ async def get_member_object(self,ctx,text):
 
 async def print_map(self,ctx,countries_file,maps_folder,country):
     await ctx.send('Imprimiendo mapa...')
-    os.system(f'./teg/map_editing.py {countries_file} {maps_folder} {country}')
+    os.system(f'./games/teg/map_editing.py {countries_file} {maps_folder} {country}')
     for temp_map in await get_maps(maps_folder):
         temp_map = discord.File(temp_map)
         await ctx.send(file=temp_map)
