@@ -1,0 +1,8 @@
+discord.py
+flask
+aioconsole
+urllib
+json
+requests
+bs4
+ast
