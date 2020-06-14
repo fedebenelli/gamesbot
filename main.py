@@ -28,7 +28,7 @@ def check(author):
 
 @bot.event
 async def on_ready():
-    newLog = "Bot is ready wacho"
+    print('Bot ready!')
     game = discord.Game("for science!")
     await bot.change_presence(activity=game)
 
@@ -38,7 +38,6 @@ async def on_ready():
 @bot.command()
 async def ping(ctx):
     await ctx.send(f"🏓 Pong! {round(bot.latency*1000)}ms")
-
 
 @bot.command()
 @commands.check(is_bot_owner)
