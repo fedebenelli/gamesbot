@@ -316,6 +316,7 @@ async def attack(self, ctx, player,players,country,countries,channel_id,countrie
 
             if not await y_or_n(self,ctx,channel_id,player,'seguir atacando'):
                 return players,countries 
+            await print_map(self,ctx,countries_file,maps_folder,country)
     else:
         return players,countries
 
